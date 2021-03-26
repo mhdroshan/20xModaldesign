@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+      <div class="container">
+
+    <!-- button -->
+    
+
+            
+         
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Open Large Modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div> -->
+            <div class="modal-body">
+                <div class="modal-form">
+            
+                    <div class="form-holder">
+                        <h4>Step <span>1</span></h4>
+                        <p class="steptitle">When do you need shift date?</p>
+                        <div class="input-grouped">
+                    <div class="input-class" >
+                        <label
+                          ><input  type="text" class="textfield" required />
+                          <span
+                            class="placeholder1"
+                            >Pick dates here</span>
+                          
+                          </label
+                        >
+                      </div>
+                    <div class="input-class">
+                        <label
+                          ><select class="textfield" name="" id="">
+                              <option value="option1">option1</option>
+                              <option value="option1">option2</option>
+                              <option value="option1">option3</option>
+                              <option value="option1">option4</option>
+                          </select>
+                          <span
+                            class="placeholder1"
+                            >Select user type</span>
+                          </label
+                        >
+                      </div>
+                    </div>
+                    </div>
+        
+        
+        
+                <div class="form-holder">
+                    <h4>Step <span>2</span></h4>
+                    <p class="steptitle">Choose a shift</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div class="input-class">
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Select shift name</span>
+                                      </label
+                                    >
+                                  </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div id="adhocInput" class="input-class">
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Adhoc shift name</span>
+                                      </label
+                                    >
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" class="form-check-input" id="adhoc">
+                                    <label  for="exampleCheck1">Adhoc</label>
+                                  </div>
+                                </div>
+                        </div>
+                        <!-- 2nd row -->
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div class="input-class">
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Shift start time</span>
+                                      </label
+                                    >
+                                  </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div class="input-class">
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Shift end time</span>
+                                      </label
+                                    >
+                                  </div>
+                                </div>
+                        </div>
+                        <!-- 3rd row -->
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div class="input-class">
+                                    <p>Client shift break status</p>
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Select end time</span>
+                                      </label
+                                    >
+                                  </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-grouped">
+                                <div class="input-class">
+                                    <p>Client break time in minutes</p>
+                                    <label
+                                      ><select class="textfield" name="" id="">
+                                          <option value="option1">option1</option>
+                                          <option value="option1">option2</option>
+                                          <option value="option1">option3</option>
+                                          <option value="option1">option4</option>
+                                      </select>
+                                      <span
+                                        class="placeholder1"
+                                        >Shift end time</span>
+                                      </label
+                                    >
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+                   <!-- table -->
+                   <table class="table ">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Band name</th>
+                        <th scope="col">Day rate</th>
+                        <th scope="col">Night rate</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="tablerow-width" scope="row">PAYF</th>
+                        <td>15</td>
+                        <td>18</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Limited company</th>
+                        <td>15</td>
+                        <td>18</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Limited company</th>
+                        <td>15</td>
+                        <td>18</td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row">Limited company</th>
+                        <td>15</td>
+                        <td>18</td>
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+        
+                  <!-- bottom part -->
+                  <div class="row">
+                      <div class="col-md-4" style="margin-top: 30px;">
+                          <div class="radio-holders">
+                              <label><input type="radio" name="rateRadio"  id="">Fixed rate</label>
+                              <label><input type="radio" name="rateRadio"  id="">Transport milage</label>
+                              <label><input type="radio" name="rateRadio"  id="">Tranport fixed</label>
+                             
+                          </div>
+                      </div>
+                      <div class="col-md-4 ">
+                        <div class="form-holder">
+                            
+                        <div class="input-class" >
+                            <p >Fixed rate</p>
+                            <label
+                              ><input  type="text" class="textfield" required />
+                              
+                              <span id
+                                class="placeholder2"
+                                >Fixed rate</span>
+                              </label
+                            >
+                          </div>
+                        <div class="input-class" >
+                            <p>Transport charges</p>
+                            <label
+                              ><input  type="text" class="textfield" required />
+                            
+                              <span id
+                                class="placeholder2"
+                                >Fixed rate</span>
+                              </label
+                            >
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-holder">
+                            
+                            <div class="input-class" >
+                                <p>Staff extra payments</p>
+                                <label
+                                  ><input  type="text" class="textfield" required />
+                                 
+                                  <span id
+                                    class="placeholder2"
+                                    >Fixed rate</span>
+                                  </label
+                                >
+                              </div>
+                            <div class="input-class" >
+                                <p>Client extra charges if any?</p>
+                                <label
+                                  ><input  type="text" class="textfield" required />
+                                  
+                                  <span id
+                                    class="placeholder2"
+                                    >Fixed rate</span>
+                                  </label
+                                >
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- step 3 -->
+                <div class="form-holder">
+                    <h4>Step <span>3</span></h4>
+                    <p class="steptitle">No of staffs required</p>
+                    <div class="input-class">
+                        <label
+                          ><select class="textfield" name="" id="">
+                              <option value="option1">option1</option>
+                              <option value="option1">option2</option>
+                              <option value="option1">option3</option>
+                              <option value="option1">option4</option>
+                          </select>
+                          <span
+                            class="placeholder1"
+                            >Select no of staffs</span>
+                          </label
+                        >
+                      </div>
+                    </div>
+        
+            </div>
+            <div class="col-sm-12" style="height: 120px;">
+                <div class="check-holder">
+                <div class="form-checkbox2">
+                    <input type="checkbox" class="form-check-input" id="adhoc">
+                    <label  for="exampleCheck1">Keep in unpublished shifts</label>
+                  </div>
+                </div>
+            </div>
+        </div>
+                  
+                </div>
+            </div>
+        
+            </div>
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button> -->
+              <div class="save-button">Save and publish</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#adhoc').change(function(){
+    if($(this).is(":checked")) {
+        // $('.form-checkbox').addClass("checked");
+        
+        // $('.form-checkbox').removeClass("unchecked");
+        $('#adhocInput').addClass("checked");
+        $('.form-checkbox').addClass("move-up");
+    } else {
+        // $('.form-checkbox').removeClass("checked");
+        $('#adhocInput').removeClass("checked");
+        $('.form-checkbox').removeClass("move-up");
+        
+        // $('.form-checkbox').addClass("unchecked");
+    }
+});
+    </script>
+  </body>
+</html>
