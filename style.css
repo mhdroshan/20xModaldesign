@@ -54,7 +54,7 @@ body {
 .input-class .placeholder2 {
   position: absolute;
   z-index: 1;
-  background-color: #fff;
+  background-color: transparent;
   top: 20px;
   right: 5px;
   font-weight: 300;
