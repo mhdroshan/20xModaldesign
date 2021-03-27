@@ -158,9 +158,10 @@ span {
 }
 .form-holder {
   position: relative;
+  width: 95%;
   padding: 0 5px;
   display: flex;
-  margin: 5px;
+  margin: 5px auto;
   flex-direction: column;
 }
 .p-0 {
@@ -183,7 +184,7 @@ span {
   margin-left: 3px;
 }
 .steptitle {
-  margin: 10px auto 5px 10px;
+  margin: 10px auto 5px 8px;
   font-weight: 500;
 }
 .check-holder {
@@ -225,7 +226,7 @@ span {
   opacity: 0;
 }
 .input-class p {
-  margin: 10px auto 2px 5px;
+  margin: 10px auto 5px 8px;
   font-weight: 500;
 }
 /* table */
