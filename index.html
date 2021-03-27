@@ -200,6 +200,11 @@
                                 </div>
                         </div>
                     </div>
+                    <!-- show more -->
+                    <div class="showmore-button">
+                      Show more
+                    </div>
+                    <div class="bottom-part">
                    <!-- table -->
                    <table class="table ">
                     <thead class="thead-dark">
@@ -326,7 +331,7 @@
                     </div>
         
             </div>
-            <div class="col-sm-12" style="height: 120px;">
+            <div class="col-sm-12" >
                 <div class="check-holder">
                 <div class="form-checkbox2">
                     <input type="checkbox" class="form-check-input" id="adhoc">
@@ -335,12 +340,15 @@
                 </div>
             </div>
         </div>
-                  
+        <div class="save-button">Save and publish</div>
+      </div>
                 </div>
+                
             </div>
-        
             </div>
-            <div class="modal-footer">
+
+            <!-- <div class="modal-footer">
+            </div> -->
               <!-- <button
                 type="button"
                 class="btn btn-default"
@@ -348,8 +356,8 @@
               >
                 Close
               </button> -->
-              <div class="save-button">Save and publish</div>
-            </div>
+              
+          
           </div>
         </div>
       </div>
@@ -358,18 +366,26 @@
     <script>
         $('#adhoc').change(function(){
     if($(this).is(":checked")) {
-        // $('.form-checkbox').addClass("checked");
         
-        // $('.form-checkbox').removeClass("unchecked");
         $('#adhocInput').addClass("checked");
         $('.form-checkbox').addClass("move-up");
     } else {
-        // $('.form-checkbox').removeClass("checked");
+        
         $('#adhocInput').removeClass("checked");
         $('.form-checkbox').removeClass("move-up");
         
-        // $('.form-checkbox').addClass("unchecked");
+       
     }
+});
+    </script>
+    <script>
+          $(document).ready(function(){
+  $(".showmore-button").click(function(){
+    $(".bottom-part").toggleClass("display-hide");
+    $('.modal-form').animate({
+         scrollTop: $(".showmore-button").offset().top
+     }, 600);
+  });
 });
     </script>
   </body>
