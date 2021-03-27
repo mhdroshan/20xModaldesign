@@ -1,23 +1,86 @@
 body {
   box-sizing: border-box;
 }
+/* trabs */
+
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border-width: 0;
+}
+
+.nav-tabs > li > a {
+  border: none;
+  color: #666;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover {
+  border: none;
+  font-weight: 600;
+  color: #28a745 !important;
+  background: transparent;
+}
+
+.nav-tabs > li > a::after {
+  content: "";
+  background: #28a745;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after,
+.nav-tabs > li:hover > a::after {
+  transform: scale(1);
+}
+
+.tab-nav > li > a::after {
+  background: #21527d none repeat scroll 0% 0%;
+  color: #fff;
+}
+
+.tab-pane {
+  padding: 0;
+}
+.alert {
+  margin-bottom: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/*  */
+.modal-header {
+  padding-bottom: 5px;
+}
 .modal-form {
   width: 100%;
-  height: 550px;
+  letter-spacing: 0.3px;
+  height: 500px;
   background-color: #eceff4;
   font-family: "Poppins", sans-serif;
   position: relative;
-  padding: 5px;
+  padding: 0px 5px 5px 5px;
   border: 1px solid #eceff4;
-  overflow-x: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .input-class {
   width: 100%;
-  padding: 5px;
+  padding: 2px;
+  min-width: 220px;
   position: relative;
 }
 .modal-body {
-  padding: 5px;
+  padding: 0px;
   padding-bottom: 0;
 }
 .modal-footer {
@@ -25,7 +88,7 @@ body {
 }
 .textfield {
   position: relative;
-  padding: 10px 15px;
+  padding: 8px 10px;
   border: 1px solid #e3f2fd;
   border-radius: 5px;
   box-shadow: none;
@@ -37,9 +100,10 @@ body {
   font-weight: 400;
   z-index: 2;
   background-color: #fff;
-  top: 10px;
-  left: 15px;
+  top: 5px;
+  left: 10px;
   color: #a9a9a9;
+  font-size: 14px;
   margin: 3px auto;
   padding: 0 8px;
   border-radius: 10px;
@@ -55,8 +119,9 @@ body {
   position: absolute;
   z-index: 1;
   background-color: transparent;
-  top: 20px;
-  right: 5px;
+  top: 10px;
+  right: 2px;
+  font-size: 13px;
   font-weight: 300;
   color: #a9a9a9;
   padding: 0 8px;
@@ -93,10 +158,13 @@ span {
 }
 .form-holder {
   position: relative;
-  padding: 0 10px;
+  padding: 0 5px;
   display: flex;
-  margin: 10px auto;
+  margin: 5px;
   flex-direction: column;
+}
+.p-0 {
+  padding: 0 !important;
 }
 .input-grouped {
   /* margin: 40px 10px 20px 10px; */
@@ -115,11 +183,18 @@ span {
   margin-left: 3px;
 }
 .steptitle {
-  margin: 2px auto 0 15px;
+  margin: 10px auto 5px 10px;
+  font-weight: 500;
 }
 .check-holder {
-  text-align: center;
+  /* text-align: center; */
   margin: 15px auto;
+}
+.final-check {
+  height: 30px;
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
 }
 .form-checkbox {
   padding: 2px;
@@ -127,7 +202,7 @@ span {
   margin: 0;
   display: flex;
   position: absolute;
-  top: 15px;
+  top: 5px;
   margin-left: 10px;
   /* left: 50%; */
   width: 80px;
@@ -143,13 +218,14 @@ span {
   opacity: 1 !important;
 }
 .move-up {
-  top: -20px !important;
+  top: -10px !important;
+  display: none;
 }
 #adhocInput {
   opacity: 0;
 }
 .input-class p {
-  margin: 12px auto 0px 12px;
+  margin: 10px auto 2px 5px;
   font-weight: 500;
 }
 /* table */
@@ -159,7 +235,7 @@ span {
 }
 .table {
   width: 98%;
-  margin: 30px auto;
+  margin: 5px auto;
   align-self: center;
   justify-content: center;
   border: 1px solid #abaaaa7a;
@@ -179,33 +255,38 @@ span {
 /* bottom part */
 .radio-holders {
   display: flex;
-  flex-direction: column;
-  margin: 35px auto 10px auto;
+  width: 100%;
+  flex-direction: row;
+  margin: 15px auto 5px auto;
 }
 .radio-holders input {
   margin-right: 10px;
 }
 .radio-holders label {
-  margin: 0px auto 5px 50px;
+  margin: auto;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
 }
 
 /* button */
 .save-button {
-  margin: 20px 10px;
+  margin: 5px;
   padding: 8px 10px;
   border-radius: 5px;
   width: 150px;
-  position: sticky;
+  position: relative;
   background: #28a745;
   border: 1.8px solid #28a745;
   color: white;
   font-weight: 600;
+  right: 13px;
   float: right;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 18px 1px #0000004a;
-  bottom: 5px;
+  /* bottom: 5px; */
   z-index: 5;
 }
 .save-button:hover {
